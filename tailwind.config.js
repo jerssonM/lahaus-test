@@ -17,8 +17,6 @@ module.exports = {
         },
         purple: {
           150: '#EBEDFF',
-        },
-        green: {
           350: 'var(--green-350)',
         },
       },
@@ -34,6 +32,7 @@ module.exports = {
       opacity: {
         70: 'var(--opacity-70)',
       },
+      zIndex: { 20: 20 },
     },
     borderRadius: {
       xl: '0.625rem',
