@@ -1,0 +1,21 @@
+:root {
+  /* colors */
+  --green-350: #3ecfaf;
+  --green-850: #012d26;
+
+  /* border radius */
+  --border-full: 50%;
+  --border-xl: 0.75rem;
+
+  /* opacity */
+  --opacity-70: 0.7;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+  font-size: 16px;
+}
