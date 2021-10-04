@@ -2,11 +2,14 @@ module.exports = {
   purge: {
     enabled: process.env.NODE_ENV === 'production',
     content: [
-      'components/**/*.vue',
-      'containers/**/*.vue',
-      'pages/**/*.vue',
-      'nuxt.config.js',
+      './src/components/**/*.{vue,js}',
+      './src/containers/**/*.{vue,js}',
+      './src/pages/**/*.vue',
+      'nuxt.config.{js,ts}',
     ],
+    styleExtensions: ['.css'],
+    whitelist: ['body', 'html', 'nuxt-progress'],
+    safelist: ['z-20'],
   },
   theme: {
     extend: {
@@ -17,6 +20,8 @@ module.exports = {
         },
         purple: {
           150: '#EBEDFF',
+        },
+        green: {
           350: 'var(--green-350)',
         },
       },
@@ -32,7 +37,6 @@ module.exports = {
       opacity: {
         70: 'var(--opacity-70)',
       },
-      zIndex: { 20: 20 },
     },
     borderRadius: {
       xl: '0.625rem',

@@ -32,4 +32,12 @@ describe('FavoriteItem', () => {
     expect(titleParagraph.text()).toContain('Mis favoritos')
     expect(images.length).toBe(2)
   })
+  test('call on click event', () => {
+    const spy = jest.fn()
+    const wrapper = mount(FavoriteItem, {
+      propsData: { ...mock, onClick: spy },
+    })
+    wrapper.find('div').trigger('click')
+    expect(spy).toHaveBeenCalled()
+  })
 })

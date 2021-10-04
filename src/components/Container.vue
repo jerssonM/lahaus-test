@@ -1,5 +1,5 @@
 <template>
-  <div class="mr-6 ml-6 mb-24 md:mx-40 md:mb-20 xl:mx-auto xl:max-w-6xl">
+  <div class="mr-6 ml-6 mb-24 md:mx-36 md:mb-20 xl:mx-auto xl:max-w-6xl">
     <slot></slot>
   </div>
 </template>

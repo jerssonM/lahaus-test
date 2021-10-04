@@ -1,4 +1,4 @@
-# [La haus test](https://lahaus-test.vercel.app/)
+# [La Haus test](https://lahaus-test.herokuapp.com)
 Por Jersson Morales
 
 ## Configuración del proyecto
@@ -16,16 +16,21 @@ $ yarn start
 
 # generate static project
 $ yarn generate
+
+# run tests
+$ yarn test
 ```
 
 ## Estructura del proyecto
 
+- Assets
 - Components
+- Config
 - Containers
 - Pages
 - Utils
 
-## Librerias usadas
+## Librerías usadas
 
 - Vue
 - Nuxt

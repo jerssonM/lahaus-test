@@ -3,11 +3,12 @@ import es from './locales/es'
 require('dotenv').config()
 
 export default {
+  srcDir: 'src',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'La Haus',
     htmlAttrs: {
-      lang: 'en',
+      lang: 'es',
     },
     meta: [
       { charset: 'utf-8' },
@@ -46,6 +47,7 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxtjs/dotenv',
+    'nuxt-purgecss',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -70,4 +72,5 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+  tailwindcss: { configPath: '../tailwind.config.js' },
 }
