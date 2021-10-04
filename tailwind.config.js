@@ -1,4 +1,13 @@
 module.exports = {
+  purge: {
+    enabled: process.env.NODE_ENV === 'production',
+    content: [
+      'components/**/*.vue',
+      'containers/**/*.vue',
+      'pages/**/*.vue',
+      'nuxt.config.js',
+    ],
+  },
   theme: {
     extend: {
       colors: {
